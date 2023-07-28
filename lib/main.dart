@@ -1,11 +1,7 @@
 import 'dart:convert';
-import 'dart:html';
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:path/path.dart';
-// import 'package:home_flutter_api/screen/home.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -97,6 +93,7 @@ Future<void> submitData(nameController, emailController, messageController) asyn
     emailController.text = '';
     messageController.text = '';
     print('Send Success');
+    
     // showSuccessMessage('Send Success');
   } else {
     // showErrorMessage('Send Failed');
